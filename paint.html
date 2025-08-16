@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Paint</title>
+    <link rel="stylesheet" href="paint.css">
+</head>
+    
+<body onload="start()" id="body">
+    <div class="top-block">
+        <div class="dropdown">
+            <button id="stroke-btn" class="dropbtn">Strichstärke</button>
+            <div id="stroke-dropdown" class="dropdown-content">
+                <div>1</div>
+                <div class="selected">2</div>
+                <div>4</div>
+                <div>8</div>
+            </div>
+        </div>
+        <div class="pen-tool">
+            <label class="form-label">1. Farbe</label>
+            <input type="color" class="selected" id="pen-color1" value="#000000" title="Color 1">
+            <label class="form-label">2. Farbe</label>
+            <input type="color" id="pen-color2" value="#ffffff" title="Color 2">
+        </div>
+        <div class="buttons">
+            <button id="clear-btn" type="button">Neu</button>
+            <button id="save-btn" type="button">Speichern</button>
+            <button class="selected" id="pen-btn" type="button">Stift</button>
+            <button id="bucket-btn" type="button">Füllen</button>
+            <button id="text-btn" type="button">Text</button>
+            <button id="eraser-btn" type="button">Radierer</button>
+            <button id="rect-btn" type="button">Rechteck</button>
+            <button id="line-btn" type="button">Linie</button>
+        </div>
+        <div class="input">
+            <input type="text" id="text-input" value="Hello World!" title="Text">
+            <input type="text" id="font-input" value="Arial" title="Font">
+            <input type="number" id="fontsize-input" value="11" title="Fontsize">
+        </div>
+    </div>
+    <div id="middle-block" class="middle-block">
+        <canvas id="canvas" width="auto" height="auto"></canvas>
+    </div>
+    <div class="bottom-block">
+        <p id="coords">0, 0px</p>
+        <p id="canvas-size">0 x 0px</p>
+    </div>
+    <script type="text/javascript" src="paint.js"></script>
+</body>
+
+</html>

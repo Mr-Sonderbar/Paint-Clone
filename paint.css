@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid #e0e0e0; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #f8f8f8;
+}
+
+.top-block {
+    height: 10%;
+    border-bottom: 1px solid #d8d8d8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pen-tool {
+    display: flex;
+    align-items: center;
+    background-color: #ece8e8;
+    padding-right: 16px;
+}
+
+.middle-block {
+    resize: both;
+    overflow: hidden;
+}
+
+.buttons {
+    height: auto;
+    padding-top: auto;
+}
+
+.buttons button {
+    display: inline;
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+    background-color: #ece8e8;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 16px;
+    /* height: 30px; */
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.selected {
+    background-color: rgb(78, 78, 255) !important;
+    color: white !important;
+}
+
+.bottom-block {
+    height: auto;
+    display: flex;
+    border-top: 1px solid #d8d8d8;
+    justify-content: space-between;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #ece8e8;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus, button:hover {
+    background-color: #ddd;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content div {
+    /* color: black; */
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content div:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Show the dropdown menu */
+.show {display:block;}
+
+label {
+    height: auto;
+    padding: 16px;
+    font-size: 16px;
+}
+
+p {
+    height: auto;
+    width: 8%;
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+}
+
+canvas {
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    cursor: crosshair;
+}
