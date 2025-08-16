@@ -13,8 +13,8 @@ This project is a simple Paint Clone, developed during a 3-day trial work period
 
 ## Usage
 
-1. Download or clone the repository.
-2. Open `paint.html` in your browser.
+1. Download/clone the repository or visit https://mr-sonderbar.github.io/Paint-Clone/.
+2. Open `index.html` in your browser.
 3. Start drawing!
 
 ## Technologies
